@@ -20,7 +20,7 @@ pipeline {
         }
       }
       steps {
-        git url: 'https://github.com/bencncode/petclinic-demo.git'
+        git url: 'https://github.com/bewinsto7604/petclinic-demo.git'
         script {
             version = readMavenPom().getVersion()
             artifactid = readMavenPom().getArtifactId()
