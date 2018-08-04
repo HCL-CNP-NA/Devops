@@ -1,9 +1,8 @@
-<img src="https://github.hpe.com/benjamin-winston/Continuous-Delivery-Docker-Java-SpringBoot-Maven/blob/master/Docker_CI-CD.png" width="900"/>
+<img src="https://github.com/bewinsto7604/Continuous-Delivery-Docker-Java-SpringBoot-Maven/blob/master/Docker_CI-CD.png" width="900"/>
 <b>Jenkins build and deploy agents</b><br/>
-1. Create a Swarm cluster with one manager and 2 worker nodes.<br/>
-2. Create 2 Jenkins agents. One on the Swarm manager node and another one on a Swarm worker node.<br/>
-3. The agent on the worker node will execute all stages in the Jenkinsfile except the deploy stage.<br/>
-4. The agent on the master node will deploy the container by executing a stack deploy of the Docker compose file.<br/>
+1. Create 2 Jenkins agents. One is the master and the other one is the worker.<br/>
+2. The agent on the worker node will execute all stages in the Jenkinsfile except the deploy stage.<br/>
+3. The agent on the master node will deploy the container by executing a stack deploy of the Docker compose file.<br/>
 <br/>
 <b>Nexus</b><br/>
 1. Install Nexus or use an existing artifact repository.<br/>
