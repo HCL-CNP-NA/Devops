@@ -27,7 +27,7 @@
 2. The file pipeline.properties has the Sonar endpoint details.<br/>
 <br/>
 <b>Build Jar file, Artifact repository and Docker Image</b><br/>
-1. The app(petclinic at https://github.hpe.com/benjamin-winston/petclinic-demo) uses a multi-stage build Docker file.<br/>
+1. The app(petclinic at https://github.com/bewinsto7604/petclinic-demo.git) uses a multi-stage build Docker file.<br/>
 2. During this build step the multi-stage Docker file will create the Jar file and push the Jar file to the Nexus artifact repository.The endpoint details for Nexus is available in the Maven pom file.<br/>
 3. The second part of the Docker file will create the runtime image by including just the Jar file from the previous step within the image.<br/>
 <br/>
